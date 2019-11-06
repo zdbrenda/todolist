@@ -83,10 +83,6 @@
 		"example",
 		"project"
 	],
-	"author": "Kas van 't Veer",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/kasvtv/react-complete-quickstart/issues"
-	},
-	"homepage": "https://github.com/kasvtv/react-complete-quickstart#readme"
+	"author": "Brenda Z",
+	"license": "MIT"
 }
