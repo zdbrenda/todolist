@@ -20,12 +20,12 @@ export default class AddTodo extends React.Component{
     }
 
     render(){
-        return(<div>
+        return(<div className="ToDoInput">
             {this.state.error&&<p>{this.state.error}</p>}
 
             <form onSubmit={this.handleAddTodo}>
                 <input type='text' name='todo'></input>
-                <button class='button'>Add Todo</button>
+                <button className='todo_add_button'>Add Todo</button>
             </form>
 
 

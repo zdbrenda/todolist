@@ -32,11 +32,11 @@ class App extends React.Component {
 
 
 	render() {
-		console.log(this.state.list);
+		
 		return (
 			<div>
-				<Header title="Brenda's Todo List App"></Header>
-				<TodoList 
+				<Header className='todo-header'title="Brenda's Todo List App"></Header>
+				<TodoList className='todo-list'
 				list={this.state.list}
 				/>
 				<AddTodo handleAddTodo={this.handleAddTodo}/>
