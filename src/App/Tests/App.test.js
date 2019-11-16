@@ -26,6 +26,18 @@ describe("The default UI",()=>{
 })
 
 describe("Adding todo items",()=>{
+    const app =mount(<App/>);
+
+    afterAll(() => {
+        app.find(".ToDoItem-Delete").simulate("click");
+      });
+      
+      window.alert = jest.fn();
+
+      test("When the add button is pressed, if the input field is empty, prevent item from being added", () => {
+        app.find(".todo_add_button").simulate("click");
+        expect(app.find(".rodo").length).toBe(0);
+      });
 
     
 })
